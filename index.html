@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Berteman TKJ</title>
+
+    <style>
+        body{
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #ffffff;
+        }
+
+        /* WARNA UTAMA */
+        :root{
+            --biru: #2196F3;
+            --hijau: #2ECC71;
+            --putih: #FFFFFF;
+        }
+
+        /* HEADER */
+        header{
+            background: linear-gradient(90deg, var(--biru), var(--hijau));
+            padding: 20px;
+            color: var(--putih);
+            text-align: center;
+        }
+
+        /* NAVIGASI */
+        nav{
+            background: var(--biru);
+            text-align: center;
+            padding: 10px;
+        }
+        nav a{
+            color: var(--putih);
+            text-decoration: none;
+            padding: 10px 18px;
+            display: inline-block;
+            font-weight: bold;
+        }
+        nav a:hover{
+            background: var(--hijau);
+            border-radius: 5px;
+        }
+
+        /* HERO */
+        .hero{
+            padding: 50px 20px;
+            text-align: center;
+            background: #ecfaff;
+        }
+        .hero h1{
+            color: var(--biru);
+            margin-bottom: 10px;
+        }
+        .hero p{
+            color: #333;
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+        .btn{
+            background: var(--hijau);
+            color: var(--putih);
+            padding: 12px 20px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .btn:hover{ background: var(--biru); }
+
+        /* FITUR */
+        .fitur{
+            padding: 40px;
+            text-align: center;
+            background: #ffffff;
+        }
+        .box-container{
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .box{
+            background: var(--putih);
+            width: 280px;
+            border-radius: 8px;
+            border: 2px solid var(--biru);
+            padding: 20px;
+        }
+        .box h3{
+            color: var(--biru);
+            margin-bottom: 10px;
+        }
+
+        /* FOOTER */
+        footer{
+            margin-top: 30px;
+            background: var(--biru);
+            color: var(--putih);
+            text-align: center;
+            padding: 15px;
+        }
+
+        /* RESPONSIVE */
+        @media(max-width: 600px){
+            .box-container{ display: block; }
+            .box{ margin: 10px auto; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <h1>KESERUAN MASUK JURUSAN TKJ</h1>
+        <p>Komunitas Belajar Teknik Komputer & Jaringan</p>
+    </header>
+
+    <!-- NAVBAR -->
+    <nav>
+        <a href="#">Beranda</a>
+        <a href="#">Fitur</a>
+        <a href="#">Tentang</a>
+        <a href="#">Kontak</a>
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero">
+        <h1>Belajar TKJ Lebih Seru Bersama Teman</h1>
+        <p>Sharing materi, latihan konfigurasi, dan bantu-membantu untuk meningkatkan skill jaringan.</p>
+        <a href="#" class="btn">Gabung Komunitas</a>
+    </section>
+
+    <!-- FITUR -->
+    <section class="fitur">
+        <h2>Fitur Utama</h2>
+        <div class="box-container">
+            <div class="box">
+                <h3>Tutorial Jaringan</h3>
+                <p>Mikrotik, Cisco, DHCP, VLAN, Hotspot, dan lainnya.</p>
+            </div>
+            <div class="box">
+                <h3>Diskusi & Bantuan</h3>
+                <p>Tanya - jawab, troubleshooting, serta latihan kasus nyata.</p>
+            </div>
+            <div class="box">
+                <h3>Project Kolaborasi</h3>
+                <p>Belajar dengan praktik langsung membuat sistem jaringan.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        © 2025 Berteman TKJ | Semua Hak Dilindungi
+    </footer>
+
+</body>
+</html>
